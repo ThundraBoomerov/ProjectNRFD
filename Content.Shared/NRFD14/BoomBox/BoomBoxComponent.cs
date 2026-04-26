@@ -1,3 +1,7 @@
+using Robust.Shared.Audio;
+using Robust.Shared.GameObjects;
+using Robust.Shared.Serialization.Manager.Attributes;
+
 namespace Content.Shared.NRFD14.BoomBox;
 
 [RegisterComponent]
@@ -14,4 +18,7 @@ public sealed partial class BoomBoxComponent : Component
 
     [DataField]
     public SoundSpecifier? StopSound;
+
+    [DataField]
+    public EntityUid? AudioStream;
 }
