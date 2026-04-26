@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "-",
+  "copyright": "-",
+  "size": {
+    "x": 48,
+    "y": 80
+  },
+  "states": [
+    {
+      "name": "Alive"
+    }
+  ]
+}
