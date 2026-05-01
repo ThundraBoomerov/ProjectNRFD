@@ -1,0 +1,105 @@
+# Base
+
+
+- type: entity
+  parent: MarkerBase
+  id: SoundGenBase
+  name: SoundGenBase
+  abstract: true
+  description: Генератор звуков
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _NRFD/soundgen.rsi
+        state: icon
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+      radius: 6
+
+- type: entity
+  parent: MarkerBase
+  id: SoundGenBaseAmbient
+  name: SoundGenBaseAmbient
+  abstract: true
+  description: Генератор звуков
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _NRFD/soundgen.rsi
+        state: icon_ambient
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+      radius: 6
+      loop: true
+
+
+# Обычные УДАЛЯЮТСЯ САМИ
+
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenDestruction1
+  name: Звукогенератор О
+  suffix: Капает вода
+  abstract: false
+  components:
+  - type: TimedDespawn #САМ УДАЛЯЕТСЯ
+    lifetime: 61 #В СЕКУНДАХ
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+
+
+# Ambient НЕ УДАЛЯЮТСЯ САМИ
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenShaftWater
+  name: Звукогенератор А
+  suffix: Капает вода
+  abstract: false
+  components:
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+      loop: true
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenEntrance1
+  name: Звукогенератор А
+  suffix: Вход 1
+  abstract: false
+  components:
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/entrance1_ambient.ogg
+    loop: true
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenEntrance2
+  name: Звукогенератор А
+  suffix: Вход 2
+  abstract: false
+  components:
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/entrance2_ambient.ogg
+    loop: true
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenEntrance3
+  name: Звукогенератор А
+  suffix: Вход 3
+  abstract: false
+  components:
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/entrance3_ambient.ogg
+    loop: true

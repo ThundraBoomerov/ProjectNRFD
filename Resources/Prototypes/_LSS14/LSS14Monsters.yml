@@ -9,6 +9,12 @@
   - type: CombatMode
   - type: InputMover
   - type: MobMover
+  - type: Actions
+    sounds:
+      scream:
+        path: /Audio/_LSS/Monsters/blackman_scream.ogg
+        params:
+          volume: 0
   - type: HTN
     rootTask:
       task: XenoCompound
@@ -38,7 +44,7 @@
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/blackman.rsi
+    sprite: _LSS14/blackman.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: Alive 
@@ -121,6 +127,12 @@
       0: Alive
       300: Dead
     offset: 0,0.6
+  - type: Actions
+    sounds:
+      scream:
+        path: /Audio/_LSS/Monsters/dog_scream.ogg
+        params:
+          volume: 0
   - type: MeleeWeapon
     damage:
      groups:
@@ -143,7 +155,13 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/blackman.rsi
+    sprite: _LSS14/blackman.rsi
+  - type: Actions
+    sounds:
+      scream:
+        path: /Audio/_LSS/Monsters/blackman_scream.ogg
+        params:
+          volume: 0
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -167,7 +185,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/bug.rsi
+    sprite: _LSS14/bug.rsi
   - type: MobThresholds
     thresholds:
       0: Alive
