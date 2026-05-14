@@ -1,5 +1,6 @@
 using Content.Shared.Interaction.Events;
 using Content.Shared.NRFD14.BoomBox;
+using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.NRFD14.BoomBox;
@@ -27,7 +28,11 @@ public sealed class BoomBoxSystem : EntitySystem
 
         if (!comp.Playing)
         {
-            var stream = _audio.PlayPvs(comp.Tracks[comp.CurrentTrack], uid);
+            var stream = _audio.PlayPvs(
+                comp.Tracks[comp.CurrentTrack],
+                uid,
+                AudioParams.Default.WithLoop(true)
+            );
 
             comp.AudioStream = stream?.Entity;
             comp.Playing = true;
