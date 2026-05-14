@@ -1,0 +1,19 @@
+- type: entity
+  id: BoomBox
+  parent: BaseItem
+  name: магнитофон
+  description: Может воспроизводить музыку!
+  components:
+  - type: Sprite
+    sprite: _NRFD/boombox.rsi
+    state: icon
+  - type: Item
+  - type: BoomBox
+    tracks:
+    - path: /Audio/_NRFD/BoomBox/boombox_music1.ogg
+    - path: /Audio/_NRFD/BoomBox/boombox_music2.ogg
+    - path: /Audio/_NRFD/BoomBox/boombox_music3.ogg
+    - path: /Audio/_NRFD/BoomBox/boombox_music4.ogg
+    - path: /Audio/_NRFD/BoomBox/boombox_music5.ogg
+    stopSound:
+      path: /Audio/_NRFD/BoomBox/boombox_stop.ogg
