@@ -1,0 +1,19 @@
+- type: entity
+  id: LSS_Radio
+  parent: BaseItem
+  name: Странное радио
+  suffix: LSS14
+  description: Странное радио без опозновательных знаков. Точно не из Китая, там подписывают.
+  components:
+  - type: Sprite
+    sprite: _LSS14/lss_radio.rsi
+    state: lss-radio
+  - type: Item
+    size: Normal
+  - type: BoomBox
+    tracks:
+    - path: /Audio/_LSS/Items/lss_radio/radio1.ogg
+    - path: /Audio/_LSS/Items/lss_radio/radio2.ogg
+    - path: /Audio/_LSS/Items/lss_radio/radio3.ogg
+    stopSound:
+      path: /Audio/_LSS/Items/lss_radio/lss-radio-off.ogg

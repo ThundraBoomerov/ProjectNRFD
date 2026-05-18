@@ -1,14 +1,15 @@
 {
   "version": 1,
   "license": "-",
-  "copyright": "-",
+  "copyright": "???, 3 directions by Thundra",
   "size": {
     "x": 48,
     "y": 80
   },
   "states": [
     {
-      "name": "Alive"
+      "name": "Alive",
+      "directions": 4
     }
   ]
 }

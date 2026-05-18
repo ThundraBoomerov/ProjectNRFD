@@ -1,0 +1,98 @@
+- type: entity
+  parent: BaseFlag
+  id: asiaflag
+  name: Флаг АСС
+  suffix: NRFDFlag
+  description: Флаг Азиатской сферы сопроцветания.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: asia
+
+- type: entity
+  parent: BaseFlag
+  id: euflag
+  name: Флаг ЕВЗВ
+  suffix: NRFDFlag
+  description: Флаг Европейской военно-экономической зоны влияния.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: EU
+
+- type: entity
+  parent: BaseFlag
+  id: usaflag
+  name: Флаг Америки
+  suffix: NRFDFlag
+  description: Флаг Американской сферы сопроцветания.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: USA
+
+- type: entity
+  parent: BaseFlag
+  id: chflag
+  name: Флаг Швейцарии
+  suffix: NRFDFlag
+  description: Флаг Швейцарской корпоративной зоны.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: ch
+
+- type: entity
+  parent: BaseFlag
+  id: jpflag
+  name: Флаг Японии
+  suffix: NRFDFlag
+  description: Флаг Японской части Азии.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: jp
+
+- type: entity
+  parent: BaseFlag
+  id: cnflag
+  name: Флаг Китая
+  suffix: NRFDFlag
+  description: Флаг Китайской части Азии.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: cn
+
+- type: entity
+  parent: BaseFlag
+  id: jpempflag
+  name: Флаг Японской империи
+  suffix: NRFDFlag
+  description: Старый флаг когда-то великой Японской империи, сейчас используется националистами. За императора!
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: jp-emp
+
+- type: entity
+  parent: BaseFlag
+  id: cuflag
+  name: Флаг Кубы
+  suffix: NRFDFlag
+  description: Флаг Кубы. Выглядит бедно, как отсутствие интернета и патриотично. Слава революции!
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: cu
+
+- type: entity
+  parent: BaseFlag
+  id: ncflag
+  name: Флаг СКС
+  suffix: NRFDFlag
+  description: Флаг Северного коммунистического содружества.
+  components:
+  - type: Sprite
+    sprite: _NRFD/flags.rsi
+    state: north-com
