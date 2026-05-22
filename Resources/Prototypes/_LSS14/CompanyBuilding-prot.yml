@@ -1,0 +1,12 @@
+- type: gameMap
+  id: CompanyBuilding
+  mapName: 'Lethal Space Station'
+  mapPath: /Maps/_LSS14/CompanyBuilding.yml
+  minPlayers: 0
+  stations:
+    CompanyBuilding:
+      stationProto: StandardStationArena
+      components:
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ 6, 6 ]
