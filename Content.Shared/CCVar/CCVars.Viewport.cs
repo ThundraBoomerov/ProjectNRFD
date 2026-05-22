@@ -8,7 +8,7 @@ public sealed partial class CCVars
         CVarDef.Create("viewport.stretch", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<int> ViewportFixedScaleFactor =
-        CVarDef.Create("viewport.fixed_scale_factor", 2, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("viewport.fixed_scale_factor", 0, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<int> ViewportSnapToleranceMargin =
         CVarDef.Create("viewport.snap_tolerance_margin", 64, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -23,10 +23,10 @@ public sealed partial class CCVars
         CVarDef.Create("viewport.minimum_width", 15, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> ViewportMaximumWidth =
-        CVarDef.Create("viewport.maximum_width", 21, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("viewport.maximum_width", 45, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> ViewportWidth =
-        CVarDef.Create("viewport.width", 21, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("viewport.width", 45, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> ViewportVerticalFit =
         CVarDef.Create("viewport.vertical_fit", true, CVar.CLIENTONLY | CVar.ARCHIVE);

@@ -57,6 +57,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
+      49: Critical
       50: Dead
   - type: Stamina
     critThreshold: 200
@@ -127,12 +128,17 @@
   - type: MobThresholds
     thresholds:
       0: Alive
+      99: Critical
       100: Dead
     offset: 0,0.6
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 35
+      types:
+        Slash: 10
+        Blunt: 10
+        Structural: 5
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -187,11 +193,16 @@
   - type: MobThresholds
     thresholds:
       0: Alive
+      299: Critical
       300: Dead
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 25
+      types:
+        Slash: 10
+        Blunt: 10
+        Structural: 5
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -244,11 +255,16 @@
   - type: MobThresholds
     thresholds:
       0: Alive
+      44: Critical
       45: Dead
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 5
+      types:
+        Slash: 2
+        Blunt: 2
+        Structural: 4
   - type: Butcherable
     butcheringType: Spike
     spawned:

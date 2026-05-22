@@ -1,6 +1,5 @@
 # Base
 
-
 - type: entity
   parent: MarkerBase
   id: SoundGenBase
@@ -35,8 +34,8 @@
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
       params:
-        volume: 0
-        maxDistance: 6
+        volume: 7
+        maxDistance: 40
     interval: 0
 
 

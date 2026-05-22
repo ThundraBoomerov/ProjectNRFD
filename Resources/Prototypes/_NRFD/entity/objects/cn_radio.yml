@@ -1,0 +1,22 @@
+- type: entity
+  id: Cn_radio
+  parent: BaseItem
+  name: Китайское радио
+  suffix: NRFD
+  description: Красное китайское радио. Точно из Китая, там подписано.
+  components:
+  - type: Sprite
+    sprite: _NRFD/cn_radio.rsi
+    state: cn-radio
+  - type: Item
+    size: Normal
+  - type: BoomBox
+    tracks:
+    - path: /Audio/_NRFD/Cn_radio/Track1.ogg
+    - path: /Audio/_NRFD/Cn_radio/Track2.ogg
+    - path: /Audio/_NRFD/Cn_radio/Track3.ogg
+    - path: /Audio/_NRFD/Cn_radio/Track4.ogg
+    - path: /Audio/_NRFD/Cn_radio/Track5.ogg
+    - path: /Audio/_NRFD/Cn_radio/Track6.ogg
+    stopSound:
+      path: /Audio/_LSS/Items/lss_radio/lss-radio-off.ogg
