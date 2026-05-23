@@ -4,7 +4,7 @@ meta:
   engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/22/2026 14:35:19
+  time: 05/23/2026 07:51:23
   entityCount: 2189
 maps:
 - 1
@@ -8658,7 +8658,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 22.5,42.5
       parent: 2
-- proto: SpawnPointPassenger
+- proto: SpawnPointWorkerLSS
   entities:
   - uid: 2189
     components:

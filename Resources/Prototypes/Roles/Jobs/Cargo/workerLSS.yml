@@ -1,0 +1,22 @@
+- type: job
+  id: WorkerLSS
+  name: работник компании
+  description: Ворует всё, что не прикручено, а что прикручено — откручивает и ворует.
+  playTimeTracker: JobWorkerLSS
+  icon: "JobIconShaftMiner"
+  startingGear: WorkerLSSGear
+  supervisors: job-supervisors-qm
+  access:
+  - Cargo
+  - Salvage
+  - Maintenance
+  - External
+
+- type: startingGear
+  id: WorkerLSSGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringHazard
+    id: SalvagePDA
+  #storage:
+    #back:
+    #- Stuff

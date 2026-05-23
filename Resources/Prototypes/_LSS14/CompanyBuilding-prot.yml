@@ -9,4 +9,4 @@
       components:
         - type: StationJobs
           availableJobs:
-            Passenger: [ 6, 6 ]
+            WorkerLSS: [ 6, 6 ]
