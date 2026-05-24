@@ -87,7 +87,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: EU_Bunker_Head
   - type: Sprite
     layers:
       - state: green
@@ -136,7 +136,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: NC_Bunker_Head
   - type: Sprite
     layers:
       - state: green
@@ -180,7 +180,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: AS_Bunker_Head
   - type: Sprite
     layers:
       - state: green
@@ -224,7 +224,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: US_Bunker_Head
   - type: Sprite
     layers:
       - state: green
@@ -268,7 +268,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: EU_Bunker_Negotiator
   - type: Sprite
     layers:
       - state: green
@@ -312,7 +312,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: NC_Bunker_Negotiator
   - type: Sprite
     layers:
       - state: green
@@ -356,7 +356,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: AS_Bunker_Negotiator
   - type: Sprite
     layers:
       - state: green
@@ -400,7 +400,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: US_Bunker_Negotiator
   - type: Sprite
     layers:
       - state: green
@@ -408,8 +408,8 @@
 
 ########EU_BUNKER_STAFF########
 
-- type: job
-  id: EU_Bunker_Staff
+- type: joEU_Bunker_Staffb
+  id: 
   name: Персонал Бункера (EU)
   description: Универсальный персонал, подчиняется капитану и переговорщику, обеспечивает порядок и работоспособность бункера.
   playTimeTracker: JobEU_Bunker_Staff
@@ -444,7 +444,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: EU_Bunker_Staff
   - type: Sprite
     layers:
       - state: green
@@ -488,7 +488,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: NC_Bunker_Staff
   - type: Sprite
     layers:
       - state: green
@@ -532,7 +532,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: AS_Bunker_Staff
   - type: Sprite
     layers:
       - state: green
@@ -576,7 +576,7 @@
   suffix: DEFCON
   components:
   - type: SpawnPoint
-    job_id: 
+    job_id: US_Bunker_Staff
   - type: Sprite
     layers:
       - state: green

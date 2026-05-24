@@ -34,9 +34,8 @@
     enabled: true
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
-      params:
-        volume: 2
-        maxDistance: 10
+    volume: 4
+    range: 10
     interval: 0
 
 
@@ -82,7 +81,8 @@
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
       params:
-        maxDistance: 10
+        maxDistance: 16
+    range: 16
 
 - type: entity
   parent: SoundGenBaseAmbient
