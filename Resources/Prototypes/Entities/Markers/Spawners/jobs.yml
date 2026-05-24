@@ -86,18 +86,6 @@
       - state: green
       - state: salvagespecialist
 
-- type: entity
-  id: SpawnPointWorkerLSS
-  parent: SpawnPointJobBase
-  name: WorkerLSS
-  components:
-  - type: SpawnPoint
-    job_id: WorkerLSS
-  - type: Sprite
-    layers:
-      - state: green
-      - state: salvagespecialist
-
 # Civilian
 
 - type: entity

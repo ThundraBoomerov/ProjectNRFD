@@ -11,11 +11,11 @@
             "name": "cn-radio"
         },
         {
-            "name": "cn-radio-inhand-left",
+            "name": "inhand-left",
             "directions": 4
         },
         {
-            "name": "cn-radio-inhand-right",
+            "name": "inhand-right",
             "directions": 4
         }
     ]

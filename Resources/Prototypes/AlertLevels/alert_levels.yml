@@ -70,3 +70,61 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+    defcon5: ###############
+      announcement: "Внимание! Текущий код DEFCON 5 — обычная военная готовность, соответствующая мирному времени."
+      color: Blue
+      emergencyLightColor: LawnGreen
+      shuttleTime: 600
+      selectable: false
+      sound:
+        path: /Audio/_DEFCON/Alarms/defconstage.ogg
+        params:
+          volume: -2
+      disableSelection: false
+    defcon4: ###############
+      announcement: "Внимание! Текущий код DEFCON 4 — обычная боевая готовность, задействованы разведывательные службы."
+      color: Green
+      emergencyLightColor: Orange
+      shuttleTime: 600
+      selectable: false
+      sound:
+        path: /Audio/_DEFCON/Alarms/defconstage.ogg
+        params:
+          volume: -2
+      disableSelection: false
+    defcon3: ###############
+      announcement: "Внимание! Текущий код DEFCON 3 — уровень повышенной боевой готовности. Все военные подразделения сменяют свои радиопозывные согласно секретным документам."
+      color: Yellow
+      emergencyLightColor: Red
+      shuttleTime: 600
+      selectable: false
+      sound:
+        path: /Audio/_DEFCON/Alarms/defconstage.ogg
+        params:
+          volume: -2
+      disableSelection: false
+      forceEnableEmergencyLights: true
+    defcon2: ###############
+      announcement: "Внимание! Текущий код DEFCON 2 — этот уровень предшествует максимальной боевой готовности. Опасность эскалации!"
+      color: Red
+      emergencyLightColor: DarkRed
+      shuttleTime: 600
+      selectable: false
+      sound:
+        path: /Audio/_DEFCON/Alarms/defconstage.ogg
+        params:
+          volume: -2
+      disableSelection: false
+      forceEnableEmergencyLights: true
+    defcon1:
+      announcement: "Внимание! Текущий код DEFCON 1 — максимальная боеготовность! Мир находятся в преддверии крупномасштабного военного конфликта с возможным использованием оружия массового поражения!" 
+      selectable: false
+      color: White
+      sound:
+        path: /Audio/_DEFCON/Alarms/defconstage.ogg
+        params:
+          volume: -2
+      disableSelection: false
+      emergencyLightColor: DarkRed
+      forceEnableEmergencyLights: true
+      shuttleTime: 600

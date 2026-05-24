@@ -1,0 +1,175 @@
+# Base
+
+#- type: entity
+#  parent: MarkerBase
+#  id: SoundGenBase
+#  name: SoundGenBase !!!ИГРАЕТ 1 РАЗ!!!
+#  abstract: true
+#  description: Генератор звуков
+#  components:
+#  - type: Sprite
+#    layers:
+#      - state: green
+#      - sprite: _NRFD/soundgen.rsi
+#        state: icon
+#  - type: EmitSoundOnSpawn
+#    sound:
+#      path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+#      radius: 6
+#      volume: 7
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenConsoleSpeak
+  name: Звукогенератор О
+  suffix: Объявление
+  abstract: false
+  components:
+  - type: TimedDespawn #САМ УДАЛЯЕТСЯ
+    lifetime: 36 #В СЕКУНДАХ. НА ОДНУ БОЛЬШЕ, ЧЕМ САМ ЗВУК
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/console_speak.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenLaunchBig
+  name: Звукогенератор О
+  suffix: Обнаружен Бол. Об.
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 6
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/launchbig.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenLaunchMid
+  name: Звукогенератор О
+  suffix: Обнаружен Ср. Об.
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 3
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/launchmid.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenLaunchSmall
+  name: Звукогенератор О
+  suffix: Обнаружен Мал. Об.
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 4
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/launchsmall.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenPing1
+  name: Звукогенератор О
+  suffix: Пинг 1
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 4
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/ping1.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenPing2
+  name: Звукогенератор О
+  suffix: Пинг 2
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/ping2.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenPing3
+  name: Звукогенератор О
+  suffix: Пинг 3
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 2
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/ping3.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenPrinter
+  name: Звукогенератор О
+  suffix: Принтер печать
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 12
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/printer_verb.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenRadioTune
+  name: Звукогенератор О
+  suffix: Радиопомехи
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 25
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/radio_tuningverb.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenSonar1
+  name: Звукогенератор О
+  suffix: Сонар 1
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 5
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/sonar1.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenSonar2
+  name: Звукогенератор О
+  suffix: Сонар 2
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 5
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/sonar2.ogg
+
+- type: entity
+  parent: SoundGenBase
+  id: SoundGenSonar3
+  name: Звукогенератор О
+  suffix: Сонар 3
+  abstract: false
+  components:
+  - type: TimedDespawn
+    lifetime: 4
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_NRFD/SoundGen/DEFCON/sonar3.ogg

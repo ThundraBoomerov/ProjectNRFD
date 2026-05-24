@@ -45,6 +45,8 @@
   - type: Clothing
     sprite: _LSS14/employee_oxygen_tank.rsi
   - type: GasTank
+    tankPressure: 2000
+    maxPressure: 2000
     air:
       volume: 10
       temperature: 293.15

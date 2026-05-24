@@ -1,0 +1,583 @@
+- type: department
+  id: DEFCON_bunker
+  name: Бункер
+  description: Персонал, работающий в бункере.
+  color: "#5fc07c"
+  roles:
+  - EU_Bunker_Head #Глава бункера 
+  - EU_Bunker_Negotiator #Переговорщик
+  - EU_Bunker_Staff #Универсальный персонал
+  - NC_Bunker_Head #NORTH COM
+  - NC_Bunker_Negotiator
+  - NC_Bunker_Staff
+  - AS_Bunker_Head #ASIA
+  - AS_Bunker_Negotiator
+  - AS_Bunker_Staff
+  - US_Bunker_Head #USA
+  - US_Bunker_Negotiator
+  - US_Bunker_Staff
+  editorHidden: true
+  weight: 130
+
+########EU BUNKER HEAD########
+
+- type: job
+  id: EU_Bunker_Head
+  name: Глава Бункера (EU)
+  description: Руководит всеми процессами в бункере, следит за соблюдением рабочих норм.
+  playTimeTracker: JobEU_Bunker_Head
+  weight: 20
+  startingGear: EU_Bunker_HeadGear
+  icon: "JobIconCaptain" #+"JobIconLawyer"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: EU_Bunker_HeadGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCapFormal
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    gloves: ClothingHandsGlovesCaptain
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+
+#jumpsuits:
+#ClothingUniformJumpsuitCapFormal
+#ClothingUniformJumpsuitLawyerBlack
+#ClothingUniformJumpsuitDetective
+
+#shoes
+#ClothingShoesBootsLaceup
+#ClothingShoesBootsLaceup
+#ClothingShoesBootsJack
+
+#eyes
+#ClothingEyesGlassesCommand
+#ClothingEyesGlassesSunglasses
+#ClothingEyesGlassesMercenary
+
+#gloves
+#ClothingHandsGlovesCaptain
+#ClothingHandsGlovesColorWhite
+#ClothingHandsGlovesMercFingerless
+
+#id
+#CaptainPDA
+#LawyerPDA
+#EngineerPDA
+
+#ears
+#ClothingHeadsetAltCommand
+#ClothingHeadsetCommand
+#ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointEU_Bunker_Head
+  parent: SpawnPointJobBase
+  name: EU_Bunker_Head
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+#state №2
+#captain
+#lawyer
+#engineer
+
+########NC BUNKER HEAD########
+
+- type: job
+  id: NC_Bunker_Head
+  name: Глава Бункера (NC)
+  description: Руководит всеми процессами в бункере, следит за соблюдением рабочих норм.
+  playTimeTracker: JobNC_Bunker_Head
+  weight: 20
+  startingGear: NC_Bunker_HeadGear
+  icon: "JobIconCaptain" #+"JobIconLawyer"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: NC_Bunker_HeadGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCapFormal
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    gloves: ClothingHandsGlovesCaptain
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointNC_Bunker_Head
+  parent: SpawnPointJobBase
+  name: NC_Bunker_Head
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+########AS BUNKER HEAD########
+
+- type: job
+  id: AS_Bunker_Head
+  name: Глава Бункера (AS)
+  description: Руководит всеми процессами в бункере, следит за соблюдением рабочих норм.
+  playTimeTracker: JobAS_Bunker_Head
+  weight: 20
+  startingGear: AS_Bunker_HeadGear
+  icon: "JobIconCaptain" #+"JobIconLawyer"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: AS_Bunker_HeadGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCapFormal
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    gloves: ClothingHandsGlovesCaptain
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointAS_Bunker_Head
+  parent: SpawnPointJobBase
+  name: AS_Bunker_Head
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+########NC BUNKER HEAD########
+
+- type: job
+  id: US_Bunker_Head
+  name: Глава Бункера (US)
+  description: Руководит всеми процессами в бункере, следит за соблюдением рабочих норм.
+  playTimeTracker: JobUS_Bunker_Head
+  weight: 20
+  startingGear: US_Bunker_HeadGear
+  icon: "JobIconCaptain" #+"JobIconLawyer"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: US_Bunker_HeadGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCapFormal
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    gloves: ClothingHandsGlovesCaptain
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointUS_Bunker_Head
+  parent: SpawnPointJobBase
+  name: US_Bunker_Head
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+########EU BUNKER NEGOTIATOR########
+
+- type: job
+  id: EU_Bunker_Negotiator
+  name: Переговорщик Бункера (EU)
+  description: Ведёт переговоры, предотвращает запуск ядерных ракет.
+  playTimeTracker: JobEU_Bunker_Negotiator
+  weight: 25
+  startingGear: EU_Bunker_NegotiatorGear
+  icon: "JobIconLawyer" #+"JobIconCaptain"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: EU_Bunker_NegotiatorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorWhite
+    id: LawyerPDA
+    ears: ClothingHeadsetCommand
+
+- type: entity
+  id: SpawnPointEU_Bunker_Negotiator
+  parent: SpawnPointJobBase
+  name: EU_Bunker_Negotiator
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer
+
+########NC BUNKER NEGOTIATOR########
+
+- type: job
+  id: NC_Bunker_Negotiator
+  name: Переговорщик Бункера (NC)
+  description: Ведёт переговоры, предотвращает запуск ядерных ракет.
+  playTimeTracker: JobNC_Bunker_Negotiator
+  weight: 25
+  startingGear: NC_Bunker_NegotiatorGear
+  icon: "JobIconLawyer" #+"JobIconCaptain"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: NC_Bunker_NegotiatorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorWhite
+    id: LawyerPDA
+    ears: ClothingHeadsetCommand
+
+- type: entity
+  id: SpawnPointNC_Bunker_Negotiator
+  parent: SpawnPointJobBase
+  name: NC_Bunker_Negotiator
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer
+
+########AS BUNKER NEGOTIATOR########
+
+- type: job
+  id: AS_Bunker_Negotiator
+  name: Переговорщик Бункера (AS)
+  description: Ведёт переговоры, предотвращает запуск ядерных ракет.
+  playTimeTracker: JobAS_Bunker_Negotiator
+  weight: 25
+  startingGear: AS_Bunker_NegotiatorGear
+  icon: "JobIconLawyer" #+"JobIconCaptain"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: AS_Bunker_NegotiatorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorWhite
+    id: LawyerPDA
+    ears: ClothingHeadsetCommand
+
+- type: entity
+  id: SpawnPointAS_Bunker_Negotiator
+  parent: SpawnPointJobBase
+  name: AS_Bunker_Negotiator
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer
+
+########US BUNKER NEGOTIATOR########
+
+- type: job
+  id: US_Bunker_Negotiator
+  name: Переговорщик Бункера (US)
+  description: Ведёт переговоры, предотвращает запуск ядерных ракет.
+  playTimeTracker: JobUS_Bunker_Negotiator
+  weight: 25
+  startingGear: US_Bunker_NegotiatorGear
+  icon: "JobIconLawyer" #+"JobIconCaptain"+"JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: US_Bunker_NegotiatorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesColorWhite
+    id: LawyerPDA
+    ears: ClothingHeadsetCommand
+
+- type: entity
+  id: SpawnPointUS_Bunker_Negotiator
+  parent: SpawnPointJobBase
+  name: US_Bunker_Negotiator
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer
+
+########EU_BUNKER_STAFF########
+
+- type: job
+  id: EU_Bunker_Staff
+  name: Персонал Бункера (EU)
+  description: Универсальный персонал, подчиняется капитану и переговорщику, обеспечивает порядок и работоспособность бункера.
+  playTimeTracker: JobEU_Bunker_Staff
+  weight: 30
+  startingGear: EU_Bunker_StaffGear
+  icon: "JobIconNanotrasen" #+"JobIconLawyer"+"JobIconCaptain"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: EU_Bunker_StaffGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMercenary
+    gloves: ClothingHandsGlovesMercFingerless
+    id: EngineerPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointEU_Bunker_Staff
+  parent: SpawnPointJobBase
+  name: EU_Bunker_Staff
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: engineer
+
+########NC_BUNKER_STAFF########
+
+- type: job
+  id: NC_Bunker_Staff
+  name: Персонал Бункера (NC)
+  description: Универсальный персонал, подчиняется капитану и переговорщику, обеспечивает порядок и работоспособность бункера.
+  playTimeTracker: JobNC_Bunker_Staff
+  weight: 30
+  startingGear: NC_Bunker_StaffGear
+  icon: "JobIconNanotrasen" #+"JobIconLawyer"+"JobIconCaptain"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: NC_Bunker_StaffGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMercenary
+    gloves: ClothingHandsGlovesMercFingerless
+    id: EngineerPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointNC_Bunker_Staff
+  parent: SpawnPointJobBase
+  name: NC_Bunker_Staff
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: engineer
+
+########AS_BUNKER_STAFF########
+
+- type: job
+  id: AS_Bunker_Staff
+  name: Персонал Бункера (AS)
+  description: Универсальный персонал, подчиняется капитану и переговорщику, обеспечивает порядок и работоспособность бункера.
+  playTimeTracker: JobAS_Bunker_Staff
+  weight: 30
+  startingGear: AS_Bunker_StaffGear
+  icon: "JobIconNanotrasen" #+"JobIconLawyer"+"JobIconCaptain"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: AS_Bunker_StaffGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMercenary
+    gloves: ClothingHandsGlovesMercFingerless
+    id: EngineerPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointAS_Bunker_Staff
+  parent: SpawnPointJobBase
+  name: AS_Bunker_Staff
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: engineer
+
+########US_BUNKER_STAFF########
+
+- type: job
+  id: US_Bunker_Staff
+  name: Персонал Бункера (US)
+  description: Универсальный персонал, подчиняется капитану и переговорщику, обеспечивает порядок и работоспособность бункера.
+  playTimeTracker: JobUS_Bunker_Staff
+  weight: 30
+  startingGear: US_Bunker_StaffGear
+  icon: "JobIconNanotrasen" #+"JobIconLawyer"+"JobIconCaptain"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: US_Bunker_StaffGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMercenary
+    gloves: ClothingHandsGlovesMercFingerless
+    id: EngineerPDA
+    ears: ClothingHeadsetAltCommand
+
+- type: entity
+  id: SpawnPointUS_Bunker_Staff
+  parent: SpawnPointJobBase
+  name: US_Bunker_Staff
+  suffix: DEFCON
+  components:
+  - type: SpawnPoint
+    job_id: 
+  - type: Sprite
+    layers:
+      - state: green
+      - state: engineer

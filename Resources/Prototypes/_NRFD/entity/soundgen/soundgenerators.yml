@@ -16,6 +16,7 @@
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
       radius: 6
+      volume: 3
 
 - type: entity
   parent: MarkerBase
@@ -34,8 +35,8 @@
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
       params:
-        volume: 7
-        maxDistance: 40
+        volume: 2
+        maxDistance: 10
     interval: 0
 
 
@@ -80,6 +81,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/shaft_water.ogg
+      params:
+        maxDistance: 10
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -91,6 +94,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/entrance1_ambient.ogg
+      params:
+        maxDistance: 12
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -102,6 +107,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/entrance2_ambient.ogg
+      params:
+        maxDistance: 12
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -113,6 +120,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/entrance3_ambient.ogg
+      params:
+        maxDistance: 12
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -124,6 +133,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/entrance4_ambient.ogg
+      params:
+        maxDistance: 12
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -135,6 +146,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/icecream-truck.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -146,6 +159,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/icecream-truck-christmas.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -157,6 +172,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/pipes_ambient.ogg
+      params:
+        maxDistance: 16
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -168,6 +185,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/power-room1.ogg
+      params:
+        maxDistance: 10
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -179,6 +198,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/blizzard.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -190,6 +211,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/high-wind.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -201,6 +224,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/forest_ambient.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -212,6 +237,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/dark_ambient.ogg
+      params:
+        maxDistance: 20
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -223,6 +250,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/scary_ambient1.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -234,6 +263,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/scary_ambient2.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -245,6 +276,8 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/inside_ambient1.ogg
+      params:
+        maxDistance: 30
 
 - type: entity
   parent: SoundGenBaseAmbient
@@ -256,3 +289,57 @@
   - type: AmbientSound
     sound:
       path: /Audio/_NRFD/SoundGen/inside_ambient2.ogg
+      params:
+        maxDistance: 30
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenBunker1
+  name: Звукогенератор А
+  suffix: Бункер 1
+  abstract: false
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/_NRFD/SoundGen/bunker1.ogg
+      params:
+        maxDistance: 16
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenBunker2
+  name: Звукогенератор А
+  suffix: Бункер 2
+  abstract: false
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/_NRFD/SoundGen/bunker2.ogg
+      params:
+        maxDistance: 16
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenBunker3
+  name: Звукогенератор А
+  suffix: Бункер 3
+  abstract: false
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/_NRFD/SoundGen/bunker3.ogg
+      params:
+        maxDistance: 16
+
+- type: entity
+  parent: SoundGenBaseAmbient
+  id: SoundGenBunker4
+  name: Звукогенератор А
+  suffix: Бункер 4
+  abstract: false
+  components:
+  - type: AmbientSound
+    sound:
+      path: /Audio/_NRFD/SoundGen/bunker4.ogg
+      params:
+        maxDistance: 16
