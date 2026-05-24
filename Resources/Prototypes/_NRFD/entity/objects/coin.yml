@@ -1,0 +1,19 @@
+- type: entity
+  parent: BaseItem
+  id: coin50_50
+  name: монетка
+  description: Двухсторонняя монета. Орёл или решка? Ой, то есть N или S?
+  components:
+  - type: Dice
+    sides: 2
+    currentValue: 2
+    soundCollection: coin
+  - type: UseDelay
+  - type: Sprite
+    sprite: _NRFD/coin.rsi
+    state: coin2_2
+  - type: Tag
+    tags:
+    - Dice
+  - type: Item
+    size: Tiny

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "MIT",
+  "copyright": "Thundra",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "asia"
+    },
+    {
+      "name": "cu"
+    },
+    {
+      "name": "jp-emp"
+    },
+    {
+      "name": "USA"
+    },
+    {
+      "name": "ch"
+    },
+    {
+      "name": "EU"
+    },
+    {
+      "name": "cn"
+    },
+    {
+      "name": "jp"
+    },
+    {
+      "name": "north-com"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: coin
+  files:
+  - /Audio/_NRFD/Coin/coin_drop.ogg
+  - /Audio/_NRFD/Coin/coin_flip.ogg

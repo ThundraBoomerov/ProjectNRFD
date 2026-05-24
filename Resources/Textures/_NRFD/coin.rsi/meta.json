@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "MIT",
+  "copyright": "By Reamnox",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "coin2_1"
+    },
+    {
+      "name": "coin2_2"
+    }
+  ]
+}

@@ -34,14 +34,12 @@
   - type: NpcFactionMember
     factions:
     - Xeno
-  - type: Hands
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/blackman.rsi
+    sprite: _LSS14/blackman.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: Alive 
+    - state: Alive 
   - type: Fixtures
     fixtures:
       fix1:
@@ -59,10 +57,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Alive
-  - type: SlowOnDamage
-    speedModifierThresholds:
-      25: 0.5
+      49: Critical
+      50: Dead
   - type: Stamina
     critThreshold: 200
   - type: Bloodstream
@@ -94,16 +90,29 @@
       - CannotSuicide
       - DoorBumpOpener
       - FootstepSound
+  - type: IntrinsicUI
+    uis:
+      enum.CrewMonitoringUIKey.Key:
+        toggleAction: ActionAGhostShowCrewMonitoring
+  - type: CrewMonitoringConsole
+  - type: Hands
+    hands:
+      hand_right:
+        location: Right
+      hand_left:
+        location: Left
+    sortedHands:
+    - hand_right
+    - hand_left
   - type: NoSlip
   - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  - type: Emoting
 
 
 #####################################################################
-
-
 
 
 - type: entity
@@ -119,20 +128,57 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      99: Critical
+      100: Dead
     offset: 0,0.6
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 35
+      types:
+        Slash: 10
+        Blunt: 10
+        Structural: 5
   - type: Butcherable
     butcheringType: Spike
     spawned:
     - id: FoodMeatRouny
       amount: 3
+  - type: Vocal
+    sounds:
+      male: LSS14DogSounds
+      female: LSS14DogSounds
+      unsexed: LSS14DogSounds
+    wilhelm: false
+  - type: Emoting
   - type: MovementSpeedModifier
     baseSprintSpeed: 6.0
-  - type: AmbientSound
+
+
+#Звуки
+
+- type: emoteSounds
+  id: LSS14DogSounds
+  params:
+    variation: 0.2
+  sounds:
+    Growl: 
+      path: /Audio/_LSS/Monsters/dog_growl.ogg
+      params:
+        volume: 0
+    Scream:
+      path: /Audio/_LSS/Monsters/dog_scream.ogg
+      params:
+        volume: 0
+
+- type: species
+  id: LSS14DogSpecies
+  #roundStart: true - Возможно потом (Разрешение играть за него)
+  prototype: LSS14Dog
+  allowedEmotes:
+    - Growl
+
+#####################################################################
 
 - type: entity
   name: ???
@@ -143,20 +189,58 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/blackman.rsi
+    sprite: _LSS14/blackman.rsi
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Alive
+      299: Critical
+      300: Dead
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 20
+      types:
+        Slash: 10
+        Blunt: 10
+        Structural: 5
   - type: Butcherable
     butcheringType: Spike
     spawned:
     - id: FoodMeatRouny
       amount: 3
+  - type: Vocal
+    sounds:
+      male: LSS14BlackmanSounds
+      female: LSS14BlackmanSounds
+      unsexed: LSS14BlackmanSounds
+    wilhelm: false
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 7.0
+
+#Звуки
+
+- type: emoteSounds
+  id: LSS14BlackmanSounds
+  params:
+    variation: 0.2
+  sounds:
+    Growl: 
+      path: /Audio/_LSS/Monsters/blackman_growl.ogg
+      params:
+        volume: 0
+    Scream:
+      path: /Audio/_LSS/Monsters/blackman_scream.ogg
+      params:
+        volume: 0
+
+- type: species
+  id: LSS14BlackManSpecies
+  #roundStart: true - Возможно потом (Разрешение играть за него)
+  prototype: LSS14BlackMan
+  allowedEmotes:
+    - Growl
+
+#####################################################################
 
 - type: entity
   name: ???
@@ -167,19 +251,24 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: /_LSS14/bug.rsi
+    sprite: _LSS14/bug.rsi
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Alive
+      44: Critical
+      45: Dead
   - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 4
     damage:
-     groups:
-       Brute: 5
+      types:
+        Slash: 2
+        Blunt: 2
+        Structural: 4
   - type: Butcherable
     butcheringType: Spike
     spawned:
     - id: FoodMeatRouny
       amount: 3
   - type: MovementSpeedModifier
-    baseSprintSpeed: 6.0
+    baseSprintSpeed: 8.0

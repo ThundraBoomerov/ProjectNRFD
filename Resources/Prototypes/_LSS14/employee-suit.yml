@@ -1,0 +1,69 @@
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetEmployee
+  name: Шлем работника
+  description: Шлем работника компании. Базово защищает от давления и радиации.
+  components:
+  - type: Sprite
+    sprite: _LSS14/employee_helmet.rsi
+  - type: Clothing
+    sprite: _LSS14/employee_helmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.3
+
+- type: entity
+  parent: ClothingOuterEVASuitBase
+  id: ClothingHardsuitEmployee
+  name: Костюм работника
+  description: Костюм работника компании. Базово защищает от давления и радиации.
+  components:
+  - type: Sprite
+    sprite: _LSS14/employee_suit.rsi
+  - type: Clothing
+    sprite: _LSS14/employee_suit.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.3
+
+- type: entity
+  parent: GasTankRoundBase
+  id: OxygenEmployeeTank
+  name: Кислородный балон работника
+  description: 
+  components:
+  - type: Sprite
+    sprite: _LSS14/employee_oxygen_tank.rsi
+  - type: Item
+    sprite: _LSS14/employee_oxygen_tank.rsi
+  - type: Clothing
+    sprite: _LSS14/employee_oxygen_tank.rsi
+  - type: GasTank
+    air:
+      volume: 10
+      temperature: 293.15
+  - type: MeleeWeapon
+    attackRate: 0.8
+    damage:
+      types:
+        Blunt: 7.5
+
+- type: entity
+  parent: OxygenEmployeeTank
+  id: OxygenEmployeeTankFilled
+  suffix: Filled
+  components:
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+    # 62 minutes
+      volume: 10
+      moles:
+        Oxygen: 4.1027581 # oxygen
+      temperature: 293.15
