@@ -179,6 +179,7 @@
   prototype: LSS14Dog
   allowedEmotes:
     - Growl
+  skinColoration: Reptilian
 
 #####################################################################
 
@@ -241,6 +242,7 @@
   prototype: LSS14BlackMan
   allowedEmotes:
     - Growl
+  skinColoration: Humanoid
 
 #####################################################################
 
